@@ -1,0 +1,388 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FF SCD — Soluções financeiras para quem move o país</title>
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <meta name="description" content="A FF SCD é a instituição financeira do transporte rodoviário: conta digital, crédito, Pix, financiamento e emissão de CIOT, sem burocracia." />
+
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = {
+      theme: {
+        extend: {
+          colors: {
+            ink: "#0b140d", navy: "#16291b", brand: "#4d6b2e",
+            cyan: "#9cbf5e", grass: "#6f9e3f", amber: "#ffb43a",
+            mist: "#f3f6ec", slate2: "#5f6b56",
+          },
+          fontFamily: {
+            display: ['"Plus Jakarta Sans"', "sans-serif"],
+            sans: ['"Inter"', "sans-serif"],
+          },
+        },
+      },
+    };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+</head>
+<body class="bg-white text-navy font-sans antialiased">
+
+  <div class="scroll-progress"></div>
+
+  <!-- ===================== HEADER ===================== -->
+  <header class="site-header fixed top-0 left-0 w-full z-50 py-4">
+    <div class="ff-container flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/img/logo-branco.svg" alt="FF SCD" class="h-8 logo-white">
+        <img src="assets/img/logo.svg" alt="FF SCD" class="h-8 logo-color">
+      </a>
+
+      <nav class="hidden lg:flex items-center gap-9 font-display font-semibold text-[.95rem]">
+        <a href="index.html" class="nav-link active">Início</a>
+        <a href="quem-somos.html" class="nav-link">Quem Somos</a>
+        <a href="solucoes.html" class="nav-link">Soluções</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+        <a href="privacidade.html" class="nav-link">Privacidade</a>
+      </nav>
+
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="contato.html" class="btn btn-outline">Fale conosco</a>
+        <a href="#app" class="btn btn-primary" data-magnetic>Abrir conta
+          <span class="btn-icon-move"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+
+      <button class="burger lg:hidden flex flex-col gap-[5px] p-2" aria-label="Abrir menu">
+        <span class="block w-6 h-[2px] bg-navy rounded"></span>
+        <span class="block w-6 h-[2px] bg-navy rounded"></span>
+        <span class="block w-6 h-[2px] bg-navy rounded"></span>
+      </button>
+    </div>
+  </header>
+
+  <!-- Mobile menu -->
+  <div class="mobile-menu hidden-menu fixed inset-0 z-40 bg-white/95 backdrop-blur-xl lg:hidden flex flex-col items-center justify-center gap-7 text-2xl font-display font-bold">
+    <a href="index.html" class="text-brand">Início</a>
+    <a href="quem-somos.html">Quem Somos</a>
+    <a href="solucoes.html">Soluções</a>
+    <a href="contato.html">Contato</a>
+    <a href="privacidade.html">Privacidade</a>
+    <a href="#app" class="btn btn-primary mt-4 text-base">Abrir conta</a>
+  </div>
+
+  <!-- ===================== HERO ===================== -->
+  <section class="relative overflow-hidden section-dark pt-36 pb-28 lg:pt-44 lg:pb-36">
+    <img src="assets/img/hero.jpg" alt="FF SCD" class="w-full h-full object-cover absolute top-0 left-0 opacity-10">
+    <div class="absolute inset-0 grid-pattern opacity-60"></div>
+    <span class="blob floaty" data-drift style="width:460px;height:460px;background:#4d6b2e;top:-120px;left:-90px;"></span>
+    <span class="blob floaty delay" data-drift style="width:420px;height:420px;background:#6f9e3f;bottom:-160px;right:-80px;opacity:.4;"></span>
+    <span class="blob" style="width:300px;height:300px;background:#9cbf5e;top:30%;right:18%;opacity:.25;"></span>
+
+    <div class="ff-container relative z-10 grid lg:grid-cols-[1.05fr,0.95fr] gap-14 items-center">
+      <div>
+        <span class="chip chip-light" data-hero="badge">
+          <span class="w-2 h-2 rounded-full bg-grass"></span>
+          Sociedade de Crédito Direto · regulada pelo Banco Central
+        </span>
+
+        <h1 data-hero="title" class="font-display font-extrabold text-white mt-6 text-[2.6rem] sm:text-6xl xl:text-[4.1rem] leading-[1.02]">
+          <span class="block overflow-hidden"><span class="line block">Soluções financeiras</span></span>
+          <span class="block overflow-hidden"><span class="line block">para quem <span class="text-grad-green">move o país</span></span></span>
+        </h1>
+
+        <p data-hero="text" class="text-[#cdddb8] text-lg mt-6 max-w-xl leading-relaxed">
+          Conta digital, crédito sem burocracia, Pix, financiamento e emissão de CIOT.
+          A instituição financeira que entende a realidade do transporte rodoviário e roda junto com você.
+        </p>
+
+        <div data-hero="cta" class="flex flex-wrap gap-4 mt-9">
+          <a href="#app" class="btn btn-green" data-magnetic>Abrir minha conta
+            <span class="btn-icon-move"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+          </a>
+          <a href="solucoes.html" class="btn btn-ghost">Conhecer soluções</a>
+        </div>
+
+       
+      </div>
+
+      <!-- Visual: app + cartão -->
+      <div data-hero="visual" class="relative flex justify-center" data-tilt>
+        <div class="glass rounded-[2.2rem] p-5 w-[300px] sm:w-[330px] shadow-2xl">
+          <div class="rounded-[1.6rem] bg-gradient-to-br from-ink to-navy p-5 text-white">
+            <div class="flex items-center justify-between">
+              <span class="text-xs text-[#a7bd97]">Conta digital FF</span>
+              <span class="logo-mark" style="width:30px;height:30px;font-size:.7rem">FF</span>
+            </div>
+            <p class="text-xs text-[#a7bd97] mt-6">Saldo disponível</p>
+            <p class="stat-num text-3xl mt-1">R$ <span data-count="12480.50" data-decimals="2">12.480,50</span></p>
+            <div class="grid grid-cols-4 gap-2 mt-6 text-center text-[10px]">
+              <div class="bg-white/10 rounded-xl py-3"><div class="text-grass text-base">↑↓</div>Pix</div>
+              <div class="bg-white/10 rounded-xl py-3"><div class="text-cyan text-base">▢</div>Boletos</div>
+              <div class="bg-white/10 rounded-xl py-3"><div class="text-amber text-base">＋</div>Recarga</div>
+              <div class="bg-white/10 rounded-xl py-3"><div class="text-white text-base">$</div>Crédito</div>
+            </div>
+          </div>
+          <div class="mt-4 rounded-2xl p-4 text-white" style="background:var(--ff-grad-brand)">
+            <div class="flex items-center justify-between text-xs"><span>Cartão de débito</span><span>FF SCD</span></div>
+            <p class="tracking-[.25em] mt-5 text-sm">5421 •••• •••• 8090</p>
+          </div>
+        </div>
+        <div class="floaty absolute -left-6 top-16 bg-white text-navy rounded-2xl shadow-xl px-4 py-3 text-sm font-display font-semibold hidden sm:flex items-center gap-2">
+          <span class="icon-badge green" style="width:34px;height:34px;border-radius:10px">✓</span> Pix aprovado
+        </div>
+        <div class="floaty delay absolute -right-4 bottom-20 bg-white text-navy rounded-2xl shadow-xl px-4 py-3 text-sm font-display font-semibold hidden sm:flex items-center gap-2">
+          <span class="badge-new">NOVO</span> Crédito via App
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== MARQUEE / DESTAQUES =====================
+  <section class="bg-mist py-7 border-y border-[var(--ff-line)]">
+    <div class="marquee">
+      <div class="marquee__track font-display font-bold text-navy/30 text-lg uppercase tracking-wide">
+        <span>Pix · 24h</span><span>•</span><span>Crédito sem burocracia</span><span>•</span>
+        <span>Emissão de CIOT · ANTT</span><span>•</span><span>Cartão de débito</span><span>•</span>
+        <span>Financiamento</span><span>•</span><span>Educação financeira</span><span>•</span>
+        <span>Pix · 24h</span><span>•</span><span>Crédito sem burocracia</span><span>•</span>
+        <span>Emissão de CIOT · ANTT</span><span>•</span><span>Cartão de débito</span><span>•</span>
+        <span>Financiamento</span><span>•</span><span>Educação financeira</span><span>•</span>
+      </div>
+    </div>
+  </section> -->
+
+  <!-- ===================== QUEM SOMOS PREVIEW ===================== -->
+  <section class="py-24 lg:py-32 relative overflow-hidden">
+    <span class="blob" data-drift style="width:380px;height:380px;background:#9cbf5e;top:10%;left:-160px;opacity:.18;"></span>
+    <span class="blob floaty" data-drift style="width:460px;height:460px;background:#4d6b2e;top:-120px;left:-90px; opacity: .2;"></span>
+    <div class="ff-container grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div class="relative" data-reveal="left">
+        <div class="rounded-[var(--ff-radius-lg)] overflow-hidden shadow-[var(--ff-shadow)] aspect-[4/3]  grid place-items-center text-white relative">
+          <div class="absolute inset-0 grid-pattern opacity-20"></div>
+          <img src="assets/img/destaque.jpg" alt="Destaque" class="absolute inset-0 w-full h-full object-cover">
+          <span class="absolute z-10 absolute bottom-5 left-5 chip chip-light">Parceiros da estrada</span>
+        </div>
+        <div class="floaty card absolute -bottom-8 -right-4 sm:-right-8 px-6 py-5 max-w-[230px]">
+          <div class="stat-num text-3xl text-grad"><span data-count="3658">3658</span>/11</div>
+          <p class="text-sm text-slate2 mt-1">Resolução atendida na emissão de CIOT</p>
+        </div>
+      </div>
+
+      <div data-reveal="right">
+        <span class="chip">Quem somos</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-5xl mt-5 leading-tight">
+          Mais que uma instituição financeira, <span class="text-grad">parceiros de quem vive da estrada</span>
+        </h2>
+        <p class="text-slate2 text-lg mt-6 leading-relaxed">
+          Somos especialistas em transporte rodoviário. Nossa tecnologia é pensada para simplificar
+          sua rotina, eliminar burocracias e dar tranquilidade para focar no que importa:
+          rodar com confiança.
+        </p>
+        <ul class="mt-8 space-y-4">
+          <li class="flex gap-4" data-reveal="up"><span class="icon-badge soft shrink-0" style="width:42px;height:42px;border-radius:12px">✓</span><span class="pt-2">Atendemos transportadoras, frotistas e caminhoneiros autônomos</span></li>
+          <li class="flex gap-4" data-reveal="up"><span class="icon-badge soft shrink-0" style="width:42px;height:42px;border-radius:12px">✓</span><span class="pt-2">Conta digital simples, segura e sem burocracia</span></li>
+          <li class="flex gap-4" data-reveal="up"><span class="icon-badge soft shrink-0" style="width:42px;height:42px;border-radius:12px">✓</span><span class="pt-2">Microcrédito rápido e direto pelo aplicativo</span></li>
+        </ul>
+        <a href="quem-somos.html" class="btn btn-primary mt-9" data-magnetic>Conheça nossa história
+          <span class="btn-icon-move"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== SERVIÇOS ===================== -->
+  <section id="servicos" class="py-24 lg:py-32 bg-mist relative overflow-hidden">
+    <div class="ff-container relative z-10">
+      <div class="max-w-2xl mx-auto text-center" data-reveal="up">
+        <span class="chip">Conta digital + serviços</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-5xl mt-5">Tudo o que você precisa <span class="text-grad">na palma da mão</span></h2>
+        <p class="text-slate2 text-lg mt-5">Gerencie seu dinheiro, faça transferências, pague contas e solicite crédito direto pelo aplicativo.</p>
+      </div>
+
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-6 mt-14">
+        <!-- card -->
+        <div class="card p-7" data-reveal="up" data-tilt>
+          <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m7 7 5-5 5 5M7 17l5 5 5-5M2 12h20"/></svg></div>
+          <h3 class="font-display font-bold text-xl mt-5">Transferências via Pix</h3>
+          <p class="text-slate2 text-sm mt-2">Envie e receba na hora, 24h por dia, todos os dias.</p>
+        </div>
+        <div class="card p-7" data-reveal="up" data-tilt>
+          <div class="icon-badge green"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20"/></svg></div>
+          <h3 class="font-display font-bold text-xl mt-5">Transferência bancária</h3>
+          <p class="text-slate2 text-sm mt-2">TED e transferências para qualquer banco com segurança.</p>
+        </div>
+        <div class="card p-7" data-reveal="up" data-tilt>
+          <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 4h16v16H4z"/><path d="M8 4v16M12 4v16M16 4v16"/></svg></div>
+          <h3 class="font-display font-bold text-xl mt-5">Pagamento de boletos</h3>
+          <p class="text-slate2 text-sm mt-2">Boletos e contas de consumo pagos sem sair de casa.</p>
+        </div>
+        <div class="card p-7 relative" data-reveal="up" data-tilt>
+          <span class="badge-new absolute top-5 right-5">NOVO</span>
+          <div class="icon-badge green"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 1v22M17 5H9.5a3.5 3.5 0 0 0 0 7h5a3.5 3.5 0 0 1 0 7H6"/></svg></div>
+          <h3 class="font-display font-bold text-xl mt-5">Empréstimo fácil via App</h3>
+          <p class="text-slate2 text-sm mt-2">Microcrédito rápido e direto, ideal para imprevistos.</p>
+        </div>
+        <div class="card p-7" data-reveal="up" data-tilt>
+          <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="5" width="20" height="14" rx="2"/><path d="M2 10h20M6 15h4"/></svg></div>
+          <h3 class="font-display font-bold text-xl mt-5">Cartão de débito</h3>
+          <p class="text-slate2 text-sm mt-2">Compre por aproximação e saque onde estiver.</p>
+        </div>
+        <div class="card p-7" data-reveal="up" data-tilt>
+          <div class="icon-badge green"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 3v18h18"/><path d="m7 14 4-4 3 3 5-6"/></svg></div>
+          <h3 class="font-display font-bold text-xl mt-5">Crédito consignado</h3>
+          <p class="text-slate2 text-sm mt-2">Condições especiais com as melhores taxas do setor.</p>
+        </div>
+        <div class="card p-7" data-reveal="up" data-tilt>
+          <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M10 17h4V5H2v12h3"/><path d="M20 17h2v-3.34a4 4 0 0 0-1.17-2.83L19 9h-5v8h1"/><circle cx="7.5" cy="17.5" r="2.5"/><circle cx="17.5" cy="17.5" r="2.5"/></svg></div>
+          <h3 class="font-display font-bold text-xl mt-5">Financiamento</h3>
+          <p class="text-slate2 text-sm mt-2">Realize seus planos com parcelas que cabem na rotina.</p>
+        </div>
+        <div class="card p-7" data-reveal="up" data-tilt>
+          <div class="icon-badge green"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5Z"/><path d="M6 12v5c0 1 2.7 3 6 3s6-2 6-3v-5"/></svg></div>
+          <h3 class="font-display font-bold text-xl mt-5">Educação financeira</h3>
+          <p class="text-slate2 text-sm mt-2">Acesso à plataforma para organizar e fazer seu dinheiro render.</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== CIOT (dark + parallax) ===================== -->
+  <section class="section-dark py-28 relative overflow-hidden">
+    <span class="blob" data-drift style="width:420px;height:420px;background:#4d6b2e;top:-100px;right:-100px;opacity:.5;"></span>
+    <span class="blob" data-drift style="width:360px;height:360px;background:#6f9e3f;bottom:-120px;left:-80px;opacity:.3;"></span>
+    <div class="ff-container relative z-10 grid lg:grid-cols-2 gap-14 items-center">
+      <div data-reveal="left">
+        <span class="chip chip-light">Conformidade · ANTT</span>
+        <h2 class="font-display font-extrabold text-white text-3xl sm:text-5xl mt-5 leading-tight">
+          Emissão de <span class="text-grad-green">CIOT</span> com total segurança
+        </h2>
+        <p class="text-[#cdddb8] text-lg mt-6 leading-relaxed">
+          A FF SCD permite a emissão de CIOT junto à ANTT, atendendo à legislação e à resolução 3.658/11,
+          que determina o uso de meio eletrônico para o pagamento do frete.
+        </p>
+        <p class="text-[#a7bd97] mt-4">
+          Trazendo segurança nas operações e opções de pagamento de fretes aos caminhoneiros
+          autônomos, pessoas físicas e assemelhados.
+        </p>
+        <a href="solucoes.html" class="btn btn-green mt-9" data-magnetic>Ver soluções completas
+          <span class="btn-icon-move"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span>
+        </a>
+      </div>
+      <div class="grid grid-cols-2 gap-5" data-reveal="right">
+        <div class="glass rounded-3xl p-6">
+          <div class="stat-num text-4xl text-white"><span data-count="100">100</span>%</div>
+          <p class="text-[#a7bd97] mt-2 text-sm">Pagamento de frete eletrônico</p>
+        </div>
+        <div class="glass rounded-3xl p-6 mt-8">
+          <div class="stat-num text-4xl text-white">ANTT</div>
+          <p class="text-[#a7bd97] mt-2 text-sm">Integração oficial</p>
+        </div>
+        <div class="glass rounded-3xl p-6">
+          <div class="stat-num text-4xl text-white">24/7</div>
+          <p class="text-[#a7bd97] mt-2 text-sm">Operações disponíveis</p>
+        </div>
+        <div class="glass rounded-3xl p-6 mt-8">
+          <div class="stat-num text-4xl text-white">LGPD</div>
+          <p class="text-[#a7bd97] mt-2 text-sm">Dados protegidos</p>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== APP CTA ===================== -->
+  <section id="app" class="py-24 lg:py-32 bg-mist relative overflow-hidden">
+    <div class="ff-container relative z-10">
+      <div class="rounded-[var(--ff-radius-lg)] overflow-hidden relative" style="background:var(--ff-grad-dark)">
+        <div class="absolute inset-0 grid-pattern opacity-25"></div>
+        <span class="blob" data-drift style="width:340px;height:340px;background:#6f9e3f;top:-80px;right:10%;opacity:.4;"></span>
+        <div class="relative z-10 grid lg:grid-cols-2 gap-10 items-center p-10 sm:p-16">
+          <div data-reveal="up">
+            <h2 class="font-display font-extrabold text-white text-3xl sm:text-5xl leading-tight">
+              Abra sua conta digital <span class="text-grad-green">em minutos</span>
+            </h2>
+            <p class="text-[#cdddb8] text-lg mt-5">
+              Tudo 100% digital, sem filas e sem burocracia. Baixe o app e tenha o controle
+              total do financeiro da sua atividade.
+            </p>
+            <div class="flex flex-wrap gap-4 mt-8">
+              <a href="contato.html" class="btn btn-green" data-magnetic>Quero abrir minha conta</a>
+              <a href="solucoes.html" class="btn btn-ghost">Ver vantagens</a>
+            </div>
+          </div>
+          <div class="flex justify-center lg:justify-end gap-5" data-reveal="zoom">
+            <div class="glass rounded-3xl p-6 w-44 text-center flex items-center justify-center flex-col">
+              <p class="text-white font-display mb-3">Disponível para</p>
+              <img src="assets/img/app.png" class="h-auto w-full">
+            </div>
+            <div class="glass rounded-3xl p-6 w-44 text-center mt-10">
+              <div class="text-4xl">⚡</div>
+              <p class="text-white font-display font-bold mt-3">Crédito rápido</p>
+              <p class="text-[#a7bd97] text-xs mt-1">Direto no app</p>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ===================== FOOTER ===================== -->
+  <footer class="section-dark pt-20 pb-10 relative overflow-hidden">
+    <div class="ff-container relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <a href="index.html" class="flex items-center gap-3">
+            <img src="assets/img/logo-branco.svg" alt="FF SCD" class="h-8 logo-white">
+          </a>
+          <p class="text-[#a7bd97] mt-5 text-sm leading-relaxed">
+            Sociedade de Crédito Direto. A melhor instituição financeira e de pagamentos
+            para o setor de transporte do país.
+          </p>
+        </div>
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Navegação</h4>
+          <ul class="space-y-3 text-sm text-[#a7bd97]">
+            <li><a class="hover:text-white transition" href="index.html">Início</a></li>
+            <li><a class="hover:text-white transition" href="quem-somos.html">Quem Somos</a></li>
+            <li><a class="hover:text-white transition" href="solucoes.html">Soluções</a></li>
+            <li><a class="hover:text-white transition" href="contato.html">Contato</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Atendimento</h4>
+          <ul class="space-y-3 text-sm text-[#a7bd97]">
+            <li><a class="hover:text-white transition" href="contato.html#ouvidoria">Ouvidoria · 0800 590 0127</a></li>
+            <li><a class="hover:text-white transition" href="contato.html#denuncias">Denúncias</a></li>
+            <li><a class="hover:text-white transition" href="contato.html#carreiras">Carreiras</a></li>
+            <li><a class="hover:text-white transition" href="privacidade.html">Privacidade de Dados</a></li>
+          </ul>
+        </div>
+        <div>
+          <h4 class="font-display font-bold text-white mb-4">Contato</h4>
+          <ul class="space-y-3 text-sm text-[#a7bd97]">
+            <li>rh@ffcredscd.com.br</li>
+            <li>Ouvidoria: 0800 590 0127</li>
+            <li><span class="chip chip-green mt-1">Adequados à LGPD</span></li>
+          </ul>
+        </div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-7 flex flex-col sm:flex-row justify-between gap-4 text-sm text-[#8a9c7c]">
+        <p>© 2026 FF SCD — Sociedade de Crédito Direto S.A. Todos os direitos reservados.</p>
+        <p>Proposta de nova identidade visual.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Voltar ao topo">
+    <svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="margin:auto"><path d="m18 15-6-6-6 6"/></svg>
+  </button>
+
+  <!-- Libs -->
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

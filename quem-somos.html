@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <link rel="icon" type="image/png" href="assets/img/favicon.png">
+  <title>FF SCD — Quem Somos</title>
+  <meta name="description" content="A FF SCD vai além de uma instituição financeira: somos especialistas em transporte rodoviário e parceiros de quem vive da estrada." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { ink:"#0b140d", navy:"#16291b", brand:"#4d6b2e", cyan:"#9cbf5e", grass:"#6f9e3f", amber:"#ffb43a", mist:"#f3f6ec", slate2:"#5f6b56" },
+      fontFamily: { display:['"Plus Jakarta Sans"',"sans-serif"], sans:['"Inter"',"sans-serif"] } } } };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-white text-navy font-sans antialiased">
+  <div class="scroll-progress"></div>
+
+  <!-- HEADER -->
+  <header class="site-header fixed top-0 left-0 w-full z-50 py-4">
+    <div class="ff-container flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/img/logo-branco.svg" alt="FF SCD" class="h-8 logo-white">
+        <img src="assets/img/logo.svg" alt="FF SCD" class="h-8 logo-color">
+      </a>
+      <nav class="hidden lg:flex items-center gap-9 font-display font-semibold text-[.95rem]">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="quem-somos.html" class="nav-link active">Quem Somos</a>
+        <a href="solucoes.html" class="nav-link">Soluções</a>
+        <a href="contato.html" class="nav-link">Contato</a>
+        <a href="privacidade.html" class="nav-link">Privacidade</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="contato.html" class="btn btn-outline">Fale conosco</a>
+        <a href="contato.html" class="btn btn-primary" data-magnetic>Abrir conta
+          <span class="btn-icon-move"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <button class="burger lg:hidden flex flex-col gap-[5px] p-2" aria-label="Abrir menu">
+        <span class="block w-6 h-[2px] bg-navy rounded"></span><span class="block w-6 h-[2px] bg-navy rounded"></span><span class="block w-6 h-[2px] bg-navy rounded"></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-menu hidden-menu fixed inset-0 z-40 bg-white/95 backdrop-blur-xl lg:hidden flex flex-col items-center justify-center gap-7 text-2xl font-display font-bold">
+    <a href="index.html">Início</a><a href="quem-somos.html" class="text-brand">Quem Somos</a><a href="solucoes.html">Soluções</a><a href="contato.html">Contato</a><a href="privacidade.html">Privacidade</a>
+    <a href="contato.html" class="btn btn-primary mt-4 text-base">Abrir conta</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden section-dark pt-36 pb-24 lg:pt-36 lg:pb-16">
+    <div class="absolute inset-0 grid-pattern opacity-60"></div>
+    <span class="blob floaty" data-drift style="width:420px;height:420px;background:#4d6b2e;top:-120px;right:-80px;"></span>
+    <span class="blob floaty delay" data-drift style="width:360px;height:360px;background:#6f9e3f;bottom:-140px;left:-90px;opacity:.4;"></span>
+    <div class="ff-container relative z-10 ff-container">
+      <span class="chip chip-light" data-hero="badge">Quem somos</span>
+      <h1 data-hero="title" class="font-display font-extrabold text-white mt-6 text-[2.4rem] sm:text-6xl leading-[1.05]">
+        <span class="block overflow-hidden"><span class="line block">De quem entende,</span></span>
+        <span class="block overflow-hidden"><span class="line block">para quem <span class="text-grad-green">vive a logística</span></span></span>
+      </h1>
+      <p data-hero="text" class="text-[#cdddb8] text-lg mt-6 max-w-2xl leading-relaxed">
+        A FF SCD vai além de uma instituição financeira: somos especialistas em transporte
+        rodoviário e parceiros de quem vive da estrada.
+      </p>
+    </div>
+  </section>
+
+  <!-- SOBRE -->
+  <section class="py-24 lg:py-32 relative overflow-hidden">
+    <span class="blob" data-drift style="width:360px;height:360px;background:#9cbf5e;top:5%;right:-150px;opacity:.16;"></span>
+    <div class="ff-container grid lg:grid-cols-2 gap-16 items-center relative z-10">
+      <div data-reveal="left">
+        <div class="rounded-[var(--ff-radius-lg)] overflow-hidden shadow-[var(--ff-shadow)] aspect-[4/3] bg-gradient-to-br from-navy to-brand grid place-items-center relative">
+          <div class="absolute inset-0 grid-pattern opacity-20"></div>
+         <img src="assets/img/empresa.jpg" alt="Empresa" class="w-full h-full object-cover">
+        </div>
+      </div>
+      <div data-reveal="right">
+        <span class="chip">Sobre a FF SCD</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl mt-5 leading-tight">Tecnologia feita para <span class="text-grad">facilitar sua rotina</span></h2>
+        <p class="text-slate2 text-lg mt-6 leading-relaxed">
+          Oferecemos uma conta digital pensada para o setor logístico, com serviços financeiros
+          simples, seguros e sem burocracia. Pelo nosso app você:
+        </p>
+        <ul class="mt-6 space-y-3 text-slate2">
+          <li class="flex gap-3"><span class="text-grass font-bold">✓</span> Gerencia seus recebimentos e pagamentos com agilidade;</li>
+          <li class="flex gap-3"><span class="text-grass font-bold">✓</span> Faz transferências, recargas de celular e pagamento de boletos;</li>
+          <li class="flex gap-3"><span class="text-grass font-bold">✓</span> Solicita microcrédito rápido e direto, ideal para imprevistos no caminho.</li>
+        </ul>
+        <p class="text-slate2 text-lg mt-6 leading-relaxed">
+          Atendemos transportadoras, frotistas e caminhoneiros autônomos, com soluções que
+          acompanham o ritmo da operação. Com a FF SCD, o transporte de cargas vira uma
+          operação organizada, sustentável e pronta para crescer.
+        </p>
+      </div>
+    </div>
+  </section>
+
+  <!-- VALORES -->
+  <section class="py-24 lg:py-32 bg-mist relative overflow-hidden">
+    <div class="ff-container relative z-10">
+      <div class="max-w-2xl mx-auto text-center" data-reveal="up">
+        <span class="chip">Nossos valores</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-5xl mt-5">O que nos <span class="text-grad">move</span></h2>
+      </div>
+      <div class="grid lg:grid-cols-3 gap-6 mt-14">
+        <div class="card p-8" data-reveal="up" data-tilt>
+          <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="10"/><circle cx="12" cy="12" r="6"/><circle cx="12" cy="12" r="2"/></svg></div>
+          <h3 class="font-display font-bold text-2xl mt-5">Missão</h3>
+          <p class="text-slate2 mt-3 leading-relaxed">Como instituição financeira e empresa de tecnologia digital, oferecer soluções em meios de pagamento, crédito, empréstimos e financiamentos de forma simples, prática e sem complicações.</p>
+        </div>
+        <div class="card p-8" data-reveal="up" data-tilt>
+          <div class="icon-badge green"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 12s3.5-7 10-7 10 7 10 7-3.5 7-10 7-10-7-10-7Z"/><circle cx="12" cy="12" r="3"/></svg></div>
+          <h3 class="font-display font-bold text-2xl mt-5">Visão</h3>
+          <p class="text-slate2 mt-3 leading-relaxed">Ser referência como instituição financeira e provedora de meios de pagamento digital para transportadores, frotistas e caminhoneiros autônomos no Brasil.</p>
+        </div>
+        <div class="card p-8" data-reveal="up" data-tilt>
+          <div class="icon-badge"><svg width="26" height="26" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 2.4 7.4H22l-6 4.6 2.3 7.4-6.3-4.6L5.7 21l2.3-7.4-6-4.6h7.6L12 2Z"/></svg></div>
+          <h3 class="font-display font-bold text-2xl mt-5">Valores</h3>
+          <ul class="text-slate2 mt-3 space-y-2">
+            <li class="flex gap-2"><span class="text-brand">•</span> Comprometimento</li>
+            <li class="flex gap-2"><span class="text-brand">•</span> Simplicidade</li>
+            <li class="flex gap-2"><span class="text-brand">•</span> Praticidade</li>
+            <li class="flex gap-2"><span class="text-brand">•</span> Tecnologia digital</li>
+            <li class="flex gap-2"><span class="text-brand">•</span> Ativo</li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- HOMOLOGAÇÕES -->
+  <section class="section-dark py-24 relative overflow-hidden">
+    <span class="blob" data-drift style="width:380px;height:380px;background:#4d6b2e;top:-90px;left:-80px;opacity:.5;"></span>
+    <div class="ff-container relative z-10 text-center">
+      <span class="chip chip-light" data-reveal="up">Confiança e segurança</span>
+      <h2 class="font-display font-extrabold text-white text-3xl sm:text-5xl mt-5" data-reveal="up">Homologações</h2>
+      <p class="text-[#a7bd97] mt-4 max-w-xl mx-auto" data-reveal="up">Operamos sob regulação do Banco Central como Sociedade de Crédito Direto e seguimos as melhores práticas do setor.</p>
+      <div class="grid sm:grid-cols-2 lg:grid-cols-4 gap-5 mt-12">
+        <div class="glass rounded-3xl p-7" data-reveal="up"><div class="stat-num text-3xl text-white">BACEN</div><p class="text-[#a7bd97] text-sm mt-2">Banco Central do Brasil</p></div>
+        <div class="glass rounded-3xl p-7" data-reveal="up"><div class="stat-num text-3xl text-white">ANTT</div><p class="text-[#a7bd97] text-sm mt-2">Emissão de CIOT</p></div>
+        <div class="glass rounded-3xl p-7" data-reveal="up"><div class="stat-num text-3xl text-white">SCD</div><p class="text-[#a7bd97] text-sm mt-2">Sociedade de Crédito Direto</p></div>
+        <div class="glass rounded-3xl p-7" data-reveal="up"><div class="stat-num text-3xl text-white">LGPD</div><p class="text-[#a7bd97] text-sm mt-2">Adequados à Lei 13.709/18</p></div>
+      </div>
+      <a href="contato.html" class="btn btn-green mt-12" data-magnetic>Fale com a gente
+        <span class="btn-icon-move"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="section-dark pt-20 pb-10 relative overflow-hidden border-t border-white/5">
+    <div class="ff-container relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <a href="index.html" class="flex items-center gap-3">
+            <img src="assets/img/logo-branco.svg" alt="FF SCD" class="h-8 logo-white">
+          </a>
+          <p class="text-[#a7bd97] mt-5 text-sm leading-relaxed">Sociedade de Crédito Direto. A melhor instituição financeira e de pagamentos para o setor de transporte do país.</p>
+        </div>
+        <div><h4 class="font-display font-bold text-white mb-4">Navegação</h4><ul class="space-y-3 text-sm text-[#a7bd97]"><li><a class="hover:text-white transition" href="index.html">Início</a></li><li><a class="hover:text-white transition" href="quem-somos.html">Quem Somos</a></li><li><a class="hover:text-white transition" href="solucoes.html">Soluções</a></li><li><a class="hover:text-white transition" href="contato.html">Contato</a></li></ul></div>
+        <div><h4 class="font-display font-bold text-white mb-4">Atendimento</h4><ul class="space-y-3 text-sm text-[#a7bd97]"><li><a class="hover:text-white transition" href="contato.html#ouvidoria">Ouvidoria · 0800 590 0127</a></li><li><a class="hover:text-white transition" href="contato.html#denuncias">Denúncias</a></li><li><a class="hover:text-white transition" href="contato.html#carreiras">Carreiras</a></li><li><a class="hover:text-white transition" href="privacidade.html">Privacidade de Dados</a></li></ul></div>
+        <div><h4 class="font-display font-bold text-white mb-4">Contato</h4><ul class="space-y-3 text-sm text-[#a7bd97]"><li>rh@ffcredscd.com.br</li><li>Ouvidoria: 0800 590 0127</li><li><span class="chip chip-green mt-1">Adequados à LGPD</span></li></ul></div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-7 flex flex-col sm:flex-row justify-between gap-4 text-sm text-[#8a9c7c]">
+        <p>© 2026 FF SCD — Sociedade de Crédito Direto S.A. Todos os direitos reservados.</p><p>Proposta de nova identidade visual.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Voltar ao topo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="margin:auto"><path d="m18 15-6-6-6 6"/></svg></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>

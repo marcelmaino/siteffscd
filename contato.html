@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>FF SCD — Contato</title>
+  <meta name="description" content="Fale com a FF SCD: envie uma mensagem, conheça nossas vagas, acione a Ouvidoria (0800 590 0127) ou registre uma denúncia." />
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script>
+    tailwind.config = { theme: { extend: {
+      colors: { ink:"#0b140d", navy:"#16291b", brand:"#4d6b2e", cyan:"#9cbf5e", grass:"#6f9e3f", amber:"#ffb43a", mist:"#f3f6ec", slate2:"#5f6b56" },
+      fontFamily: { display:['"Plus Jakarta Sans"',"sans-serif"], sans:['"Inter"',"sans-serif"] } } } };
+  </script>
+  <link rel="stylesheet" href="assets/css/style.css" />
+</head>
+<body class="bg-white text-navy font-sans antialiased">
+  <div class="scroll-progress"></div>
+
+  <!-- HEADER -->
+  <header class="site-header fixed top-0 left-0 w-full z-50 py-4">
+    <div class="ff-container flex items-center justify-between">
+      <a href="index.html" class="flex items-center gap-3">
+        <img src="assets/img/logo-branco.svg" alt="FF SCD" class="h-8 logo-white">
+        <img src="assets/img/logo.svg" alt="FF SCD" class="h-8 logo-color">
+      </a>
+      <nav class="hidden lg:flex items-center gap-9 font-display font-semibold text-[.95rem]">
+        <a href="index.html" class="nav-link">Início</a>
+        <a href="quem-somos.html" class="nav-link">Quem Somos</a>
+        <a href="solucoes.html" class="nav-link">Soluções</a>
+        <a href="contato.html" class="nav-link active">Contato</a>
+        <a href="privacidade.html" class="nav-link">Privacidade</a>
+      </nav>
+      <div class="hidden lg:flex items-center gap-3">
+        <a href="#mensagem" class="btn btn-outline">Enviar mensagem</a>
+        <a href="#ouvidoria" class="btn btn-primary" data-magnetic>Ouvidoria
+          <span class="btn-icon-move"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+      <button class="burger lg:hidden flex flex-col gap-[5px] p-2" aria-label="Abrir menu">
+        <span class="block w-6 h-[2px] bg-navy rounded"></span><span class="block w-6 h-[2px] bg-navy rounded"></span><span class="block w-6 h-[2px] bg-navy rounded"></span>
+      </button>
+    </div>
+  </header>
+  <div class="mobile-menu hidden-menu fixed inset-0 z-40 bg-white/95 backdrop-blur-xl lg:hidden flex flex-col items-center justify-center gap-7 text-2xl font-display font-bold">
+    <a href="index.html">Início</a><a href="quem-somos.html">Quem Somos</a><a href="solucoes.html">Soluções</a><a href="contato.html" class="text-brand">Contato</a><a href="privacidade.html">Privacidade</a>
+  </div>
+
+  <!-- HERO -->
+  <section class="relative overflow-hidden section-dark pt-36 pb-24 lg:pt-36 lg:pb-16">
+    <div class="absolute inset-0 grid-pattern opacity-60"></div>
+    <span class="blob floaty" data-drift style="width:420px;height:420px;background:#4d6b2e;top:-120px;left:-90px;"></span>
+    <span class="blob floaty delay" data-drift style="width:360px;height:360px;background:#6f9e3f;bottom:-140px;right:-80px;opacity:.4;"></span>
+    <div class="ff-container relative z-10 ff-container">
+      <span class="chip chip-light" data-hero="badge">Atendimento</span>
+      <h1 data-hero="title" class="font-display font-extrabold text-white mt-6 text-[2.4rem] sm:text-6xl leading-[1.05]">
+        <span class="block overflow-hidden"><span class="line block">Estamos aqui</span></span>
+        <span class="block overflow-hidden"><span class="line block">para <span class="text-grad-green">te atender</span></span></span>
+      </h1>
+      <p data-hero="text" class="text-[#cdddb8] text-lg mt-6 max-w-2xl leading-relaxed">
+        Envie uma mensagem, fale com nossa Ouvidoria, registre uma denúncia ou
+        venha fazer parte da nossa equipe.
+      </p>
+    </div>
+  </section>
+
+  <!-- CARDS DE CONTATO RÁPIDO -->
+  <section class="py-4 mt-16 relative z-20">
+    <div class="ff-container grid sm:grid-cols-3 gap-6">
+      <a href="#ouvidoria" class="card p-7 block" data-reveal="up"><div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 16.92v3a2 2 0 0 1-2.18 2 19.79 19.79 0 0 1-8.63-3.07 19.5 19.5 0 0 1-6-6 19.79 19.79 0 0 1-3.07-8.67A2 2 0 0 1 4.11 2h3a2 2 0 0 1 2 1.72c.13.96.36 1.9.7 2.81a2 2 0 0 1-.45 2.11L8.09 9.91a16 16 0 0 0 6 6l1.27-1.27a2 2 0 0 1 2.11-.45c.91.34 1.85.57 2.81.7A2 2 0 0 1 22 16.92Z"/></svg></div><h3 class="font-display font-bold text-lg mt-4">Ouvidoria</h3><p class="text-slate2 text-sm mt-1">0800 590 0127</p></a>
+      <a href="#carreiras" class="card p-7 block" data-reveal="up"><div class="icon-badge green"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2" y="7" width="20" height="14" rx="2"/><path d="M16 7V5a2 2 0 0 0-2-2h-4a2 2 0 0 0-2 2v2"/></svg></div><h3 class="font-display font-bold text-lg mt-4">Carreiras</h3><p class="text-slate2 text-sm mt-1">rh@ffcredscd.com.br</p></a>
+      <a href="#denuncias" class="card p-7 block" data-reveal="up"><div class="icon-badge"><svg width="24" height="24" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 15s1-1 4-1 5 2 8 2 4-1 4-1V3s-1 1-4 1-5-2-8-2-4 1-4 1Z"/><path d="M4 22v-7"/></svg></div><h3 class="font-display font-bold text-lg mt-4">Denúncias</h3><p class="text-slate2 text-sm mt-1">Identificada ou anônima</p></a>
+    </div>
+  </section>
+
+  <!-- ENVIE UMA MENSAGEM -->
+  <section id="mensagem" class="py-20 lg:py-28 relative overflow-hidden">
+    <span class="blob" data-drift style="width:340px;height:340px;background:#9cbf5e;top:10%;right:-150px;opacity:.14;"></span>
+    <div class="ff-container grid lg:grid-cols-[0.85fr,1.15fr] gap-14 relative z-10">
+      <div data-reveal="left">
+        <span class="chip">Fale conosco</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl mt-5 leading-tight">Envie-nos uma <span class="text-grad">mensagem</span></h2>
+        <p class="text-slate2 text-lg mt-5 leading-relaxed">Estamos aqui para te atender. Preencha o formulário e nossa equipe retornará o mais breve possível.</p>
+        <div class="card p-6 mt-8 flex gap-4 items-start">
+          <span class="icon-badge soft shrink-0" style="width:42px;height:42px;border-radius:12px">✓</span>
+          <p class="text-sm text-slate2 pt-1">Este campo de contato utiliza as seguintes informações pessoais do seu cadastro: CNPJ, Nome, CPF, Email, Telefone, Estado, Cidade.</p>
+        </div>
+      </div>
+      <form class="card p-8 sm:p-10" data-reveal="right" onsubmit="return false">
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div><label class="text-sm font-semibold">Nome</label><input class="field mt-2" type="text" placeholder="Seu nome completo" /></div>
+          <div><label class="text-sm font-semibold">CPF / CNPJ</label><input class="field mt-2" type="text" placeholder="000.000.000-00" /></div>
+          <div><label class="text-sm font-semibold">E-mail</label><input class="field mt-2" type="email" placeholder="voce@email.com" /></div>
+          <div><label class="text-sm font-semibold">Telefone</label><input class="field mt-2" type="tel" placeholder="(00) 00000-0000" /></div>
+          <div><label class="text-sm font-semibold">Estado</label><input class="field mt-2" type="text" placeholder="UF" /></div>
+          <div><label class="text-sm font-semibold">Cidade</label><input class="field mt-2" type="text" placeholder="Sua cidade" /></div>
+        </div>
+        <div class="mt-5"><label class="text-sm font-semibold">Mensagem</label><textarea class="field mt-2" rows="4" placeholder="Como podemos ajudar?"></textarea></div>
+        <label class="flex gap-3 mt-5 text-sm text-slate2"><input type="checkbox" class="mt-1 accent-[#4d6b2e]" /> Autorizo o uso dos meus dados pessoais conforme a Política de Privacidade.</label>
+        <button class="btn btn-primary mt-6 w-full justify-center" data-magnetic>Enviar mensagem</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- CARREIRAS -->
+  <section id="carreiras" class="py-20 lg:py-24 bg-mist relative overflow-hidden">
+    <div class="ff-container relative z-10">
+      <div class="card p-10 sm:p-14 grid lg:grid-cols-[1.2fr,0.8fr] gap-10 items-center overflow-hidden relative">
+        <div data-reveal="left">
+          <span class="chip chip-green">Carreiras</span>
+          <h2 class="font-display font-extrabold text-3xl sm:text-4xl mt-5 leading-tight">Gostaria de se juntar à nossa <span class="text-grad-green">equipe em crescimento?</span></h2>
+          <p class="text-slate2 text-lg mt-5">Estamos sempre em busca de pessoas que querem transformar a vida financeira de quem move o país.</p>
+          <a href="mailto:rh@ffcredscd.com.br" class="btn btn-green mt-7" data-magnetic>rh@ffcredscd.com.br</a>
+        </div>
+        <div class="grid place-items-center" data-reveal="right">
+          <div class="icon-badge green floaty" style="width:120px;height:120px;border-radius:32px"><svg width="56" height="56" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M16 21v-2a4 4 0 0 0-4-4H6a4 4 0 0 0-4 4v2"/><circle cx="9" cy="7" r="4"/><path d="M22 21v-2a4 4 0 0 0-3-3.87M16 3.13a4 4 0 0 1 0 7.75"/></svg></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- OUVIDORIA -->
+  <section id="ouvidoria" class="section-dark py-24 relative overflow-hidden">
+    <span class="blob" data-drift style="width:380px;height:380px;background:#4d6b2e;top:-90px;right:-80px;opacity:.45;"></span>
+    <div class="ff-container relative z-10 grid lg:grid-cols-2 gap-12 items-center">
+      <div data-reveal="left">
+        <span class="chip chip-light">Ouvidoria</span>
+        <h2 class="font-display font-extrabold text-white text-3xl sm:text-5xl mt-5 leading-tight">Estamos aqui para <span class="text-grad-green">te atender</span></h2>
+        <p class="text-[#cdddb8] text-lg mt-6">Nossa Ouvidoria está disponível para ouvir você e garantir o melhor atendimento.</p>
+      </div>
+      <div class="glass rounded-[var(--ff-radius-lg)] p-10 text-center" data-reveal="right">
+        <p class="text-[#a7bd97]">Ligue gratuitamente</p>
+        <a href="tel:08005900127" class="stat-num text-5xl sm:text-6xl text-white block mt-3">0800 590 0127</a>
+        <a href="tel:08005900127" class="btn btn-green mt-8" data-magnetic>Ligar agora
+          <span class="btn-icon-move"><svg width="16" height="16" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M5 12h14M13 6l6 6-6 6"/></svg></span></a>
+      </div>
+    </div>
+  </section>
+
+  <!-- DENÚNCIAS -->
+  <section id="denuncias" class="py-20 lg:py-28 relative overflow-hidden">
+    <div class="ff-container grid lg:grid-cols-[0.85fr,1.15fr] gap-14 relative z-10">
+      <div data-reveal="left">
+        <span class="chip">Canal de denúncias</span>
+        <h2 class="font-display font-extrabold text-3xl sm:text-4xl mt-5 leading-tight">Registre uma <span class="text-grad">denúncia</span></h2>
+        <p class="text-slate2 text-lg mt-5 leading-relaxed">Estamos aqui para te atender. Sua denúncia pode ser identificada ou anônima, e será tratada com total sigilo.</p>
+      </div>
+      <form class="card p-8 sm:p-10" data-reveal="right" onsubmit="return false">
+        <div class="flex gap-3 mb-6">
+          <label class="flex-1 cursor-pointer"><input type="radio" name="tipo" class="peer hidden" checked /><span class="block text-center px-4 py-3 rounded-xl border-2 border-[var(--ff-line)] font-semibold peer-checked:bg-[#4d6b2e] peer-checked:text-white peer-checked:border-transparent transition">Identificada</span></label>
+          <label class="flex-1 cursor-pointer"><input type="radio" name="tipo" class="peer hidden" /><span class="block text-center px-4 py-3 rounded-xl border-2 border-[var(--ff-line)] font-semibold peer-checked:bg-[#4d6b2e] peer-checked:text-white peer-checked:border-transparent transition">Anônima</span></label>
+        </div>
+        <div class="grid sm:grid-cols-2 gap-5">
+          <div><label class="text-sm font-semibold">Nome</label><input class="field mt-2" type="text" placeholder="Seu nome (opcional)" /></div>
+          <div><label class="text-sm font-semibold">E-mail</label><input class="field mt-2" type="email" placeholder="voce@email.com" /></div>
+        </div>
+        <div class="mt-5"><label class="text-sm font-semibold">Descreva a denúncia</label><textarea class="field mt-2" rows="5" placeholder="Conte o que aconteceu..."></textarea></div>
+        <label class="flex gap-3 mt-5 text-sm text-slate2"><input type="checkbox" class="mt-1 accent-[#4d6b2e]" /> Autorizo o uso dos meus dados pessoais conforme a Política de Privacidade.</label>
+        <button class="btn btn-primary mt-6 w-full justify-center" data-magnetic>Enviar denúncia</button>
+      </form>
+    </div>
+  </section>
+
+  <!-- FOOTER -->
+  <footer class="section-dark pt-20 pb-10 relative overflow-hidden border-t border-white/5">
+    <div class="ff-container relative z-10">
+      <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-10">
+        <div>
+          <a href="index.html" class="flex items-center gap-3"><span class="logo-mark">FF</span><span class="font-display font-extrabold text-lg text-white">FF SCD</span></a>
+          <p class="text-[#a7bd97] mt-5 text-sm leading-relaxed">Sociedade de Crédito Direto. A melhor instituição financeira e de pagamentos para o setor de transporte do país.</p>
+        </div>
+        <div><h4 class="font-display font-bold text-white mb-4">Navegação</h4><ul class="space-y-3 text-sm text-[#a7bd97]"><li><a class="hover:text-white transition" href="index.html">Início</a></li><li><a class="hover:text-white transition" href="quem-somos.html">Quem Somos</a></li><li><a class="hover:text-white transition" href="solucoes.html">Soluções</a></li><li><a class="hover:text-white transition" href="contato.html">Contato</a></li></ul></div>
+        <div><h4 class="font-display font-bold text-white mb-4">Atendimento</h4><ul class="space-y-3 text-sm text-[#a7bd97]"><li><a class="hover:text-white transition" href="#ouvidoria">Ouvidoria · 0800 590 0127</a></li><li><a class="hover:text-white transition" href="#denuncias">Denúncias</a></li><li><a class="hover:text-white transition" href="#carreiras">Carreiras</a></li><li><a class="hover:text-white transition" href="privacidade.html">Privacidade de Dados</a></li></ul></div>
+        <div><h4 class="font-display font-bold text-white mb-4">Contato</h4><ul class="space-y-3 text-sm text-[#a7bd97]"><li>rh@ffcredscd.com.br</li><li>Ouvidoria: 0800 590 0127</li><li><span class="chip chip-green mt-1">Adequados à LGPD</span></li></ul></div>
+      </div>
+      <div class="border-t border-white/10 mt-12 pt-7 flex flex-col sm:flex-row justify-between gap-4 text-sm text-[#8a9c7c]">
+        <p>© 2026 FF SCD — Sociedade de Crédito Direto S.A. Todos os direitos reservados.</p><p>Proposta de nova identidade visual.</p>
+      </div>
+    </div>
+  </footer>
+
+  <button class="to-top" aria-label="Voltar ao topo"><svg width="20" height="20" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2.4" stroke-linecap="round" stroke-linejoin="round" style="margin:auto"><path d="m18 15-6-6-6 6"/></svg></button>
+
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/gsap.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/gsap@3.12.5/dist/ScrollTrigger.min.js"></script>
+  <script src="https://cdn.jsdelivr.net/npm/lenis@1.1.13/dist/lenis.min.js"></script>
+  <script src="assets/js/main.js"></script>
+</body>
+</html>
